@@ -1,0 +1,179 @@
+/* style.css - Розовая тема */
+:root {
+  --primary-color: #ff66b2; /* Основной розовый */
+  --secondary-color: #ff99cc; /* Светло-розовый */
+  --accent-color: #cc0066; /* Темно-розовый */
+  --text-color: #333333;
+  --light-text: #ffffff;
+  --bg-color: #fff0f5; /* Очень светлый розовый фон */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: var(--light-text);
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 102, 178, 0.2);
+}
+
+nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 102, 178, 0.1);
+}
+
+h1, h2 {
+  color: var(--accent-color);
+}
+
+footer {
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  color: var(--light-text);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Стили для видео-контейнера */
+.video-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 102, 178, 0.15);
+  margin: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  header, footer {
+    padding: 1rem 0;
+  }
+}
+/* Стили для увеличенной центральной плашки */
+.main-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    background: linear-gradient(145deg, #ffe6f2, #ffcce6);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+.enlarged-plashka {
+    width: auto;
+    height: 300px; /* Увеличено в 3 раза (ориентируйтесь на исходный размер) */
+    object-fit: contain;
+    transform: scale(3); /* Увеличение в 3 раза */
+    margin-bottom: 80px; /* Компенсируем увеличение */
+    transition: transform 0.3s ease;
+}
+
+.project-description {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(255, 102, 178, 0.15);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.project-description h2 {
+    color: #ff0066;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.project-description p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 992px) {
+    .enlarged-plashka {
+        transform: scale(2);
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-hero {
+        min-height: 60vh;
+    }
+    
+    .enlarged-plashka {
+        transform: scale(1.5);
+        margin-bottom: 40px;
+        height: 200px;
+    }
+    
+    .project-description {
+        width: 90%;
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .enlarged-plashka {
+        transform: scale(1.2);
+        margin-bottom: 30px;
+        height: 150px;
+    }
+    
+    .project-description h2 {
+        font-size: 1.8em;
+    }
+    
+    .project-description p {
+        font-size: 1em;
+    }
+}
