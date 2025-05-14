@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой творческий проект</title>
+    <title>Курсы | Творческая мастерская</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,20 +16,38 @@
     </header>
     
     <main>
-        <!-- Центральная секция с увеличенной плашкой -->
-        <section class="main-hero">
-            <div class="hero-container">
-                <img src="images/плашка-2.png" alt="Главная плашка" class="enlarged-plashka">
-                <div class="project-description">
-                    <h2>О проекте</h2>
-                    <p>Этот сайт создан для поддержки творческих людей. Здесь вы найдете курсы и вдохновение!</p>
+        <section class="courses-section">
+            <h1>Наши курсы</h1>
+            
+            <!-- Видео с Rutube -->
+            <div class="course-video">
+                <h2>Основы творчества</h2>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://rutube.ru/embed/3a3dbd0238a1dd58009e2c002ec804c6/?p=0uyPqPLIlQXNl34UUjZsug" 
+                        frameborder="0" 
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <p class="video-description">Посмотрите наш вводный урок по основам творческого процесса.</p>
+            </div>
+            
+            <!-- Можно добавить больше курсов -->
+            <div class="course-list">
+                <div class="course-card">
+                    <h3>Монтаж эдитов</h3>
+                    <p>5 уроков | С нуля</p>
+                </div>
+                <div class="course-card">
+                    <h3>Фотограф</h3>
+                    <p>5 уроков | Начинающий уровень</p>
                 </div>
             </div>
         </section>
     </main>
     
     <footer>
-        <p>© 2024 Мой проект. Все права защищены.</p>
+        <p>© 2024 Творческая мастерская. Все права защищены.</p>
     </footer>
 </body>
 </html>
