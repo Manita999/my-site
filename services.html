@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+$title = "Услуги";
+$activePage = 'services';
+require_once 'header.php';
+?>
+
+<main>
     <title>Услуги</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Логотип" class="logo">
+            <img src="images/logo.png" alt="Логотип" class="logo">
            <nav>
              <a href="index.html">Главная</a>
              <a href="courses.html" class="active">Курсы</a>
              <a href="services.html">Услуги</a>
+             <a href="login.php">Вход</a>
           </nav>
         </div>
         <h1>Наши услуги</h1>
@@ -28,8 +31,4 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>© 2025 GG! Все права защищены.</p>
-    </footer>
-</body>
-</html>
+<?php require_once 'footer.php'; ?>
